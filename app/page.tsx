@@ -155,9 +155,11 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
           </div>
         </div>
       </section>
-<FAQSection />
+<div className="-mt-4 md:-mt-2">
+  <FAQSection />
+</div>
 
-<section id="contact" className="mx-auto max-w-7xl px-4 py-5 md:px-6 md:py-10">
+<section id="contact" className="mx-auto max-w-7xl px-4 py-2 md:px-6 md:py-6">
         <div className="rounded-[2rem] bg-[#f9dce8] px-5 py-10 text-center shadow-lg md:px-6 md:py-14">
           <Image src="/images/logo.png" alt="Cakes By Livvie" width={120} height={120} className="mx-auto h-20 w-20 object-contain" />
           <h2 className="mt-4 text-4xl text-[#8b123f]">Cakes By Livvie</h2>
