@@ -118,8 +118,8 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
               </div>
 <div className="p-4 text-center md:p-6">
               
-                <h3 className="min-h-[60px] text-lg font-semibold leading-tight text-[#7b1238] md:text-2xl">{item.title}</h3>
-                <Link href={`/shop/${item.slug}`} className="mt-4 inline-block rounded-full bg-[#8b123f] px-4 py-2.5 text-xs font-semibold text-white hover:bg-[#6f0e32] md:px-6 md:py-3 md:text-sm">
+                <h3 className="min-h-[40px] text-lg font-semibold leading-tight text-[#7b1238] md:min-h-[60px] md:text-2xl">{item.title}</h3>
+                <Link href={`/shop/${item.slug}`} className="mt-2 inline-block rounded-full bg-[#8b123f] px-4 py-2.5 text-xs font-semibold text-white hover:bg-[#6f0e32] md:px-6 md:py-3 md:text-sm">
                   View Collection
                 </Link>
               </div>
@@ -127,14 +127,14 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
           ))}
         </div>
       </section>
-
-      <section className="bg-[#fffafb] px-6 py-24">
+<section className="bg-[#fffafb] px-4 py-14 md:px-6 md:py-24">
+      
         <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-3xl uppercase tracking-[0.35em] text-[#8b7a80]">
             What Our Customers Say
           </h2>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
+         <div className="mt-8 grid gap-5 md:mt-14 md:gap-8 md:grid-cols-3">
             {[
               ["M", "Maryanne", "Birthday Cake Client", "The cake was beautiful, elegant, and tasted amazing. Everyone at the party loved it."],
               ["L", "Lavenda", "Wedding Cake Client", "Cakes By Livvie exceeded my expectations. The wedding cake looked luxurious and tasted perfect."],
@@ -158,8 +158,8 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
       </section>
 <FAQSection />
 
-      <section id="contact" className="mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-[2rem] bg-[#f9dce8] px-6 py-14 text-center shadow-lg">
+      <section id="contact" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-20">
+        <div className="rounded-[2rem] bg-[#f9dce8] px-5 py-10 text-center shadow-lg md:px-6 md:py-14">
           <Image src="/images/logo.png" alt="Cakes By Livvie" width={120} height={120} className="mx-auto h-20 w-20 object-contain" />
           <h2 className="mt-4 text-4xl text-[#8b123f]">Cakes By Livvie</h2>
           <p className="mt-3 text-2xl text-[#e6007e]">Mwingi’s Leading Name In Luxury Cakes & Sweet Celebrations</p>
@@ -182,8 +182,8 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
         </div>
       </section>
 
-      <section className="border-t border-pink-100 bg-white px-6 py-16">
-        <div className="mx-auto grid max-w-5xl gap-14 text-center md:grid-cols-3">
+     <section className="border-t border-pink-100 bg-white px-4 py-10 md:px-6 md:py-16">
+        <div className="mx-auto grid max-w-5xl gap-8 text-center md:gap-14 md:grid-cols-3">
           <div>
             <h3 className="mb-6 text-sm uppercase tracking-[0.25em] text-[#3b1f2b]">Quick Links</h3>
             <div className="space-y-4 text-sm text-[#6d4a57]">
@@ -252,7 +252,7 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
           </div>
         </div>
 
-        <div className="mx-auto mt-14 max-w-5xl border-t border-[#f3b3cb] pt-8 text-center text-sm text-[#8b7a80]">
+        <div className="mx-auto mt-8 max-w-5xl border-t border-[#f3b3cb] pt-6 text-center text-sm text-[#8b7a80] md:mt-14 md:pt-8">
           © Cakes By Livvie 2026.
         </div>
       </section>
