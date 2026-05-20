@@ -3,6 +3,7 @@ import { supabase } from "../../../../src/lib/supabase";
 import EditCakeForm from "./EditCakeForm";
 import AdminGuard from "../../AdminGuard";
 
+export const dynamic = "force-dynamic";
 type Product = {
   id: string;
   name: string;

@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { supabase } from "../../../src/lib/supabase";
 import AddToCartButton from "../../components/AddToCartButton";
 
+export const dynamic = "force-dynamic";
 type Product = {
   id: string;
   name: string;
