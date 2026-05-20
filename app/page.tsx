@@ -50,13 +50,6 @@ const collections = [
   },
 ];
 
-  const faqs = [
-    "How can I order a custom cake?",
-    "Do you deliver cakes?",
-    "How early should I place my order?",
-    "What payment method do you accept?",
-    "Do you make wedding cakes?",
-  ];
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#fff8f8] pt-28 text-[#3b1f2b]">
@@ -72,7 +65,7 @@ const collections = [
               Now Taking Birthday & Wedding Orders
             </p>
 
-            <h1 className="max-w-3xl text-6xl font-semibold leading-[1.02] text-[#7b1238] md:text-8xl">
+            <h1 className="max-w-3xl text-5xl font-semibold leading-[1.02] text-[#7b1238] sm:text-6xl md:text-8xl">
               Luxury Cakes
               <br />
               Crafted With
@@ -103,8 +96,8 @@ const collections = [
                 alt="Luxury Cake"
 className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px]"
               />
-              <div className="absolute bottom-10 left-10 rounded-2xl bg-white/90 px-6 py-4 shadow-lg backdrop-blur">
-                <p className="text-2xl text-[#7b1238]">Fresh • Elegant • Custom</p>
+              <div className="absolute bottom-5 left-5 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur md:bottom-10 md:left-10 md:px-6 md:py-4">
+                <p className="text-lg font-semibold text-[#7b1238] md:text-2xl">Fresh • Elegant • Custom</p>
                 <p className="mt-1 text-sm text-[#8b5670]">Cakes By Livvie • Mwingi Town</p>
               </div>
             </div>
@@ -112,21 +105,21 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
         </div>
       </section>
 
-      <section id="shop" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="shop" className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
         <h2 className="text-center text-3xl uppercase tracking-[0.35em] text-[#8b7a80]">
           Our Collection
         </h2>
 
 <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
           {collections.map((item) => (
-            <div key={item.title} className="group overflow-hidden rounded-[2rem] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+            <div key={item.title} className="group overflow-hidden rounded-[1.5rem] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
               <div className="overflow-hidden">
-                <img src={item.image} alt={item.title} className="h-32 w-full object-cover transition duration-500 group-hover:scale-110 sm:h-44 md:h-72" />
+                <img src={item.image} alt={item.title} className="h-28 w-full object-cover transition duration-500 group-hover:scale-110 sm:h-44 md:h-72" />
               </div>
-
-              <div className="p-6 text-center">
-                <h3 className="text-2xl text-[#7b1238]">{item.title}</h3>
-                <Link href={`/shop/${item.slug}`} className="mt-5 inline-block rounded-full bg-[#8b123f] px-6 py-3 text-sm font-semibold text-white hover:bg-[#6f0e32]">
+<div className="p-4 text-center md:p-6">
+              
+                <h3 className="min-h-[60px] text-lg font-semibold leading-tight text-[#7b1238] md:text-2xl">{item.title}</h3>
+                <Link href={`/shop/${item.slug}`} className="mt-4 inline-block rounded-full bg-[#8b123f] px-4 py-2.5 text-xs font-semibold text-white hover:bg-[#6f0e32] md:px-6 md:py-3 md:text-sm">
                   View Collection
                 </Link>
               </div>
