@@ -4,6 +4,7 @@ import DeleteCakeButton from "./DeleteCakeButton";
 import AdminGuard from "./AdminGuard";
 import LogoutButton from "./LogoutButton";
 
+export const dynamic = "force-dynamic";
 type Product = {
   id: string;
   name: string;
