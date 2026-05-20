@@ -101,7 +101,7 @@ const collections = [
               <img
                 src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop"
                 alt="Luxury Cake"
-                className="h-[550px] w-full rounded-[2rem] object-cover"
+className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px]"
               />
               <div className="absolute bottom-10 left-10 rounded-2xl bg-white/90 px-6 py-4 shadow-lg backdrop-blur">
                 <p className="text-2xl text-[#7b1238]">Fresh • Elegant • Custom</p>
@@ -117,11 +117,11 @@ const collections = [
           Our Collection
         </h2>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-3">
+<div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
           {collections.map((item) => (
             <div key={item.title} className="group overflow-hidden rounded-[2rem] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
               <div className="overflow-hidden">
-                <img src={item.image} alt={item.title} className="h-72 w-full object-cover transition duration-500 group-hover:scale-110" />
+                <img src={item.image} alt={item.title} className="h-32 w-full object-cover transition duration-500 group-hover:scale-110 sm:h-44 md:h-72" />
               </div>
 
               <div className="p-6 text-center">
