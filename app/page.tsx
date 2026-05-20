@@ -59,7 +59,7 @@ const collections = [
         <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#ff5ea8]/20 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#7b1238]/10 blur-3xl" />
 
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-20 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-10 md:grid-cols-2 md:py-14">
           <div>
             <p className="mb-5 text-sm font-bold uppercase tracking-[0.4em] text-[#ff4f93]">
               Now Taking Birthday & Wedding Orders
@@ -105,12 +105,12 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
         </div>
       </section>
 
-      <section id="shop" className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
+     <section id="shop" className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
         <h2 className="text-center text-3xl uppercase tracking-[0.35em] text-[#8b7a80]">
           Our Collection
         </h2>
 
-<div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
+<div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
           {collections.map((item) => (
             <div key={item.title} className="group overflow-hidden rounded-[1.5rem] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
               <div className="overflow-hidden">
@@ -127,14 +127,14 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
           ))}
         </div>
       </section>
-<section className="bg-[#fffafb] px-4 py-14 md:px-6 md:py-24">
+<section className="bg-[#fffafb] px-4 py-8 md:px-6 md:py-12">
       
         <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-3xl uppercase tracking-[0.35em] text-[#8b7a80]">
             What Our Customers Say
           </h2>
 
-         <div className="mt-8 grid gap-5 md:mt-14 md:gap-8 md:grid-cols-3">
+         <div className="mt-6 grid gap-4 md:mt-8 md:gap-5 md:grid-cols-3">
             {[
               ["M", "Maryanne", "Birthday Cake Client", "The cake was beautiful, elegant, and tasted amazing. Everyone at the party loved it."],
               ["L", "Lavenda", "Wedding Cake Client", "Cakes By Livvie exceeded my expectations. The wedding cake looked luxurious and tasted perfect."],
@@ -158,7 +158,7 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
       </section>
 <FAQSection />
 
-      <section id="contact" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-20">
+      <section id="contact" className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
         <div className="rounded-[2rem] bg-[#f9dce8] px-5 py-10 text-center shadow-lg md:px-6 md:py-14">
           <Image src="/images/logo.png" alt="Cakes By Livvie" width={120} height={120} className="mx-auto h-20 w-20 object-contain" />
           <h2 className="mt-4 text-4xl text-[#8b123f]">Cakes By Livvie</h2>
@@ -182,7 +182,7 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
         </div>
       </section>
 
-     <section className="border-t border-pink-100 bg-white px-4 py-10 md:px-6 md:py-16">
+  <section className="border-t border-pink-100 bg-white px-4 py-8 md:px-6 md:py-10">
         <div className="mx-auto grid max-w-5xl gap-8 text-center md:gap-14 md:grid-cols-3">
           <div>
             <h3 className="mb-6 text-sm uppercase tracking-[0.25em] text-[#3b1f2b]">Quick Links</h3>
