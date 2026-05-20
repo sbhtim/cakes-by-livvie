@@ -60,7 +60,7 @@ const collections = [
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#7b1238]/10 blur-3xl" />
 
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-10 md:grid-cols-2 md:py-14">
-          <div>
+         <div className="animate-[fadeUp_0.8s_ease-out]">
             <p className="mb-5 text-sm font-bold uppercase tracking-[0.4em] text-[#ff4f93]">
               Now Taking Birthday & Wedding Orders
             </p>
@@ -88,7 +88,7 @@ const collections = [
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative animate-[fadeUp_1s_ease-out]">
             <div className="absolute -left-5 -top-5 h-full w-full rounded-[2.5rem] bg-gradient-to-br from-[#ff5ea8] to-[#7b1238]" />
             <div className="relative overflow-hidden rounded-[2.5rem] bg-white p-5 shadow-2xl">
               <img
@@ -112,7 +112,7 @@ className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[460px] md:h-[550px
 
 <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
           {collections.map((item) => (
-            <div key={item.title} className="group overflow-hidden rounded-[1.5rem] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+            <div key={item.title} className="group overflow-hidden rounded-[1.5rem] bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="overflow-hidden">
                 <img src={item.image} alt={item.title} className="h-28 w-full object-cover transition duration-500 group-hover:scale-110 sm:h-44 md:h-72" />
               </div>
